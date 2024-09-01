@@ -1,0 +1,160 @@
+/* styling the cards  */
+
+body{
+    background-color: rgb(209, 205, 205);
+}
+.Container{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 20px;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    background-color: rgb(209, 205, 205);
+}
+
+.firsthalf{
+    display: flex;
+    column-gap: 30px;
+}
+
+.secondhalf{
+    display: flex;
+    column-gap: 30px;
+}
+.card{
+    /* border: 2px solid; */
+    width: 430px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgb(237, 234, 234);
+    position: relative;
+    background-size:cover; /* Ensure the background covers the whole card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+/* styling each card one by one  */
+
+.card h2{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(82, 1, 82);
+    max-width: 350px;
+}
+
+.card p{
+    max-width: 350px;
+    max-height: 200px;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(43, 42, 42);
+
+}
+
+.contact h2 span{
+    position: relative;
+    left: 32%;
+}
+
+.fraud p{
+    width: 290px;
+    text-align: center;
+}
+
+.card h2{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.card button{
+    position: absolute;
+    top: 75%;
+    background-color: teal;
+    height: 40px;
+    width: 120px;
+    color: white;
+    border: none;
+    transition: all 0.6s ease-out;
+}
+
+.card button:hover{
+    box-shadow: inset 12em 0 rgb(3, 82, 82);
+    cursor: pointer;
+    color: white;
+}
+
+.card button:hover{
+    cursor: pointer;
+}
+
+/* styling background images for the cards  */
+
+.fraud{
+    background-image: url('gilbert-home-tile-swooshes_t-l.png');
+}
+
+.contact{
+    background-image: url('gilbert-home-tile-swooshes_t-r.png');
+}
+
+.help{
+    background-image: url('gilbert-home-tile-swooshes_b-l.png');
+}
+
+.lost{
+    background-image: url('gilbert-home-tile-swooshes_b-r.png');
+}
+
+/* responsiveness for mobile phones  */
+
+@media only screen and (max-width: 850px) {
+    .firsthalf{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .secondhalf{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .card{
+        background-image: none;
+        width:100%;
+        height: auto;
+    }
+
+    .card button{
+        position: static;
+        background-color: teal;
+        height: 40px;
+        width:90%;
+        color: white;
+        border: none;
+        transition: all 0.6s ease-out;
+        margin-bottom: 20px;
+    }
+    .card button:hover{
+        box-shadow: inset 29em 0 rgb(3, 82, 82);
+        cursor: pointer;
+        color: white;
+    }
+
+    .Container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 5%;
+        left: 0%;
+        background-color: rgb(209, 205, 205);
+    }
+  }
